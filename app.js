@@ -66,13 +66,13 @@ function getResult() {
 */
 
 function compare(randomNumber, userChoice) {
-    if ((randomNumber === 0 && userChoice === 2) ||
-        (randomNumber === 2 && userChoice === 1) ||
-        (randomNumber === 1 && userChoice === 0)) {
+    if ((randomNumber === 'rock' && userChoice === 'paper') ||
+        (randomNumber === 'paper' && userChoice === 'scissors') ||
+        (randomNumber === 'scissors' && userChoice === 'rock')) {
         result = 'You win!';
-    } else if ((randomNumber === 0 && userChoice === 1) ||
-               (randomNumber === 2 && userChoice === 0) ||
-               (randomNumber === 1 && userChoice === 2)) {
+    } else if ((randomNumber === 'rock' && userChoice === 'scissors') ||
+               (randomNumber === 'paper' && userChoice === 'rock') ||
+               (randomNumber === 'scissors' && userChoice === paper)) {
         result = 'You lose!';
     } else {
         result = "It's a draw!";
